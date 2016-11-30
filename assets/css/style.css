@@ -62,6 +62,7 @@
 	padding-right: 20px;
 	letter-spacing: 3px;
 	position: relative;
+	z-index: 1000;
 }
 
 .page-wrapper {
@@ -146,6 +147,53 @@ a {
 	letter-spacing: 5px;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#photo-container {
+    position: absolute;
+    height: 90%;
+    z-index: 10;
+		margin-top: 110px;
+		margin-left: 160px;
+}
+
+#overlay {
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	margin: 0 auto;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.pic {
+		width: 180px;
+		height: 180px;
+		object-fit: cover;
+    margin: 15px;
+		border-radius: 2px;
+		border-style: solid;
+		border-width: 5px;
+		transition: 0.5s;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+}
+
+.descrip {
+	position: absolute;
+	width: 180px;
+	font-family: Six Caps;
+	color: white;
+	visibility: hidden;
+	margin-left: 20px;
+	margin-top: -200px;
+	font-size: 40px;
+	text-align: center;
+}
+
 .parallax {
 		background-image: url("../img/background2.jpg");
 		height: 100%;
@@ -164,33 +212,121 @@ a {
 		background-size: cover;
 }
 
+.hov {
+	display: inline-block;
+}
 
 .parallax-header {
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	background-color: #050505;
 	text-align: center;
-	font-size: 40px;
-	font-family: Josefin Slab;
+	font-size: 50px;
+	font-family: Six Caps;
 	padding-top: 20px;
 	position: absolute;
 	z-index: 1;
+	letter-spacing: 5px;
 }
 
 .parallax2-header {
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	background-color: #050505;
 	text-align: center;
-	font-size: 40px;
-	font-family: Josefin Slab;
+	font-size: 50px;
+	font-family: Six Caps;
 	padding-top: 20px;
 	position: absolute;
 	z-index: 1;
+	letter-spacing: 5px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.hov:hover .descrip {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+.hov:hover .pic {
+	opacity: 0.5;
+}
+
+.pic:hover {
+	opacity: 0.5;
+}
+
+p {
+	color: white;
+	font-family: Six Caps;
+	margin: 20px;
+	width: 400px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	font-size: 70px;
+}
+
+#Ladakh {
+	margin-top: -600px;
+	margin-left: 35px;
+	font-size: 50px;
+	width: 400px;
+}
+
+#Tibet {
+	margin-left: 495px;
+	margin-top: -415px;
+	font-size: 50px;
+	width: 400px;
+}
+
+#Europe {
+	margin-left: 960px;
+	margin-top: -525px;
+	font-size: 50px;
+	width: 400px;
+}
+
+.detail {
+	color: white;
+	font-family: Cutive Mono;
+	margin: 20px;
+	width: 400px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	visibility: hidden;
+	font-size: 22px;
+
+}
+
+#Ladakh:hover .detail {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+#Ladakh:hover p {
+	visibility: hidden;
+}
+
+#Tibet:hover .detail {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+#Tibet:hover p {
+	visibility: hidden;
+}
+
+#Europe:hover .detail {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+#Europe:hover p {
+	visibility: hidden;
 }

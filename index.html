@@ -2,9 +2,9 @@
   <head>
     <title>Exploration</title>
       <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
       <script src = "assets/js/script.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
       </script>
@@ -19,19 +19,18 @@
     </div>
     <nav class = "sidebar-container">
         <ul>
-          <li class="sidebar-item">Home</li>
-          <li class="sidebar-item">Explored</li>
-          <li class="sidebar-item">About</li>
+          <a href="#explored"><li class="sidebar-item">Explored</li></a>
+          <a href="#about"><li class="sidebar-item">About</li></a>
         </ul>
     </nav>
       <div class = "page-wrapper">
-        <div id="header">
+        <div id="header" id="home">
           <script src="assets/js/typed.js"></script>
             <script>
               $(function(){
                 $(".element").typed({
                   strings: ["Let's Explore..."],
-                  typeSpeed: 50
+                  typeSpeed: 70
                 });
               });
             </script>
@@ -40,11 +39,97 @@
       <div>
         <img id="arrow" src="assets/img/down.png">
       </div>
-      <div class="parallax-header">Explored</div>
-      <div class = "parallax"></div>
-      <div class="parallax2-header">About</div>
-      <div class = "parallax2"></div>
+      <div id="explored">
+        <div class="parallax-header">Explored</div>
+        <div id="overlay">
+        <div id="photo-container">
+        <div class="hov">
+          <img id="pic1" class="pic" src="assets/img/p1.jpeg">
+          <div class="descrip">Pangong Lake - Ladakh, India</div>
+        </div>
+        <div class="hov">
+          <img id="pic2" class="pic" src="assets/img/p2.jpeg">
+          <div class="descrip">Buddhist Temple - Ladakh, India</div>
+        </div>
+        <div class="hov">
+          <img id="pic3" class="pic" src="assets/img/p3.jpeg">
+          <div class="descrip">Mt. Everest - Ladakh, India</div>
+        </div>
+        <div class="hov">
+          <img id="pic4" class="pic" src="assets/img/p4.jpeg">
+          <div class="descrip">Hillside Buildings - Ladakh, India</div>
+        </div>
+        <div class="hov">
+          <img id="pic5" class="pic" src="assets/img/p5.jpeg">
+          <div class="descrip">Native Woman - Ladakh, India</div>
+        </div>
+          <br>
+        <div class="hov">
+          <img id="pic6" class="pic" src="assets/img/p6.jpeg">
+          <div class="descrip">Lake - Lhasa, Tibet</div>
+        </div>
+        <div class="hov">
+          <img id="pic7" class="pic" src="assets/img/p7.jpeg">
+          <div class="descrip">Colorful Fabric - Tibet</div>
+        </div>
+        <div class="hov">
+          <img id="pic8" class="pic" src="assets/img/p8.jpeg">
+          <div class="descrip">Potala Palace - Tibet</div>
+        </div>
+        <div class="hov">
+          <img id="pic9" class="pic" src="assets/img/p9.jpeg">
+          <div class="descrip">Buddhist Monastery - Tibet</div>
+        </div>
+        <div class="hov">
+          <img id="pic10" class="pic" src="assets/img/p10.jpeg">
+          <div class="descrip">Mt. Everest - Tibet</div>
+        </div>
+          <br>
+        <div class="hov">
+          <img id="pic11" class="pic" src="assets/img/p11.jpeg">
+          <div class="descrip">Eiffel Tower - Paris, France</div>
+        </div>
+        <div class="hov">
+          <img id="pic12" class="pic" src="assets/img/p12.jpeg">
+          <div class="descrip">Savory Crêpe - Paris, France</div>
+        </div>
+        <div class="hov">
+          <img id="pic13" class="pic" src="assets/img/p13.jpeg">
+          <div class="descrip">City View - Prague, Czech Republic</div>
+        </div>
+        <div class="hov">
+          <img id="pic14" class="pic" src="assets/img/p14.jpeg">
+          <div class="descrip">Restaurant - Budapest, Hungary</div>
+        </div>
+        <div class="hov">
+          <img id="pic15" class="pic" src="assets/img/p15.jpeg">
+          <div class="descrip">Louvre Museum - Paris, France</div>
+        </div>
+        </div>
       </div>
-
+        <div class="parallax"></div>
+      </div>
+      <div id="about">
+        <div class="parallax2-header">About</div>
+          <div class="parallax2"></div>
+        <div class="hov2">
+          <div id="Ladakh">
+          <p>Ladakh</p>
+          <div class="detail">Ladakh is a region in the northern Indian state of Jammu and Kashmir, known for its jagged mountain ranges, sparsely populated regions and Buddhist temples. It is bound by the Himalayas to the south and the Kunlun mountain range to the north.</div>
+          </div>
+        </div>
+        <div class="hov2">
+          <div id="Tibet">
+          <p>Tibet</p>
+          <div class="detail">Tibet is home to the Tibetan people, located in the southwestern region of China. It's often considered "the Roof of the World" due to its unparalleled beauty and diverse natural surroundings. Once again, it is known for its Buddhist monasteries and the presence of Mt. Everest in the southern part of the region.</div>
+          </div>
+          </div>
+        <div class="hov2">
+          <div id="Europe">
+          <p>Europe</p>
+          <div class="detail">Budapest, the capital of Hungary, is famous for its monuments and relics that reflect its occupation by the Ottomans during the 17th century. Prague is one of the most beautiful cities in Europe, a historic city full of Medieval architecture and an abundance of UNESCO World Heritage sites. Paris, as we all know, is world famous for its rich history, tourist attractions, entertainment, fashion, and so on.</div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
